@@ -1,1 +1,0 @@
-{"version":3,"file":"static/css/370.5423c445.chunk.css","mappings":"AAAA,eACE,YAAa,CACb,sBACE,kBAAmB","sources":["scss/section/contactpage.scss"],"sourcesContent":[".contects-page {\r\n  padding: 53px;\r\n  &__title {\r\n    margin-bottom: 46px;\r\n  }\r\n}\r\n"],"names":[],"sourceRoot":""}
