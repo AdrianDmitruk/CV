@@ -1,24 +1,59 @@
-import logo from './logo.svg';
-import './App.css';
+import './scss/App.scss';
+import React, { Suspense } from 'react'
 
-function App() {
+import { Routes, Route } from 'react-router-dom'
+
+import Home from './pages/Home'
+import MainLayout from './layouts/MainLayout'
+import Spinner from './components/Spinner'
+
+const Works = React.lazy(() => import('./pages/Works'))
+const AboutMe = React.lazy(() => import('./pages/AboutMe'))
+const Contacts = React.lazy(() => import('./pages/Contacts'))
+const NotFound = React.lazy(() => import('./pages/NotFound'))
+
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path="/" element={<MainLayout />}>
+        <Route path="/" element={<Home />} />
+
+        <Route
+          path="/works"
+          element={
+            <Suspense fallback={<Spinner />}>
+              <Works />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/about"
+          element={
+            <Suspense fallback={<Spinner />}>
+              <AboutMe />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/contacts"
+          element={
+            <Suspense fallback={<Spinner />}>
+              <Contacts />
+            </Suspense>
+          }
+        />
+
+        <Route
+          path="*"
+          element={
+            <Suspense fallback={<Spinner />}>
+              <NotFound />
+            </Suspense>
+          }
+        />
+      </Route>
+    </Routes>
   );
 }
 
