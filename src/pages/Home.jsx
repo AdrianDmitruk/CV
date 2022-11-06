@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <>
       <First />
-      {/* <Quote /> */}
+      {/* <Quote />  */}
       <Projects />
       <Skills />
       <AboutMain />
