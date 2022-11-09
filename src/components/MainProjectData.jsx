@@ -4,6 +4,7 @@ import contentSecond from '../assets/content3.jpg'
 import contentTherd from '../assets/content4.jpg'
 import contentFive from '../assets/content5.jpg'
 import contentSix from '../assets/content6.jpg'
+import contentSev from '../assets/content7.jpg'
 
 export const MainProjectData = [
   {
@@ -15,12 +16,12 @@ export const MainProjectData = [
     code: 'https://github.com/AdrianDmitruk/logos-react',
   },
   {
-    imageUrl: contentFirst,
-    title: 'Todo-list',
-    stack: 'HTML SCSS JavaScript',
-    description: 'List of tasks for JavaScript',
-    demo: 'https://adriandmitruk.github.io/todo-list/',
-    code: 'https://github.com/AdrianDmitruk/todo-list',
+    imageUrl: contentSev,
+    title: 'Todo-list-React',
+    stack: 'HTML SCSS React TypeScript Adaptive Layout',
+    description: 'List of tasks for React',
+    demo: 'https://adriandmitruk.github.io/todo-list-react/',
+    code: 'https://github.com/AdrianDmitruk/todo-list-react',
   },
   {
     imageUrl: contentSecond,
@@ -29,6 +30,14 @@ export const MainProjectData = [
     description: 'Adaptive layout of the travel site',
     demo: 'https://adriandmitruk.github.io/Wild-Acation/',
     code: 'https://github.com/AdrianDmitruk/Wild-Acation',
+  },
+  {
+    imageUrl: contentFirst,
+    title: 'Todo-list',
+    stack: 'HTML SCSS JavaScript',
+    description: 'List of tasks for JavaScript',
+    demo: 'https://adriandmitruk.github.io/todo-list/',
+    code: 'https://github.com/AdrianDmitruk/todo-list',
   },
   {
     imageUrl: contentTherd,
@@ -46,23 +55,15 @@ export const MainProjectData = [
     demo: 'https://adriandmitruk.github.io/MyFreedomIT/',
     code: 'https://github.com/AdrianDmitruk/MyFreedomIT',
   },
-  {
-    imageUrl: contentSix,
-    title: 'Birds-live',
-    stack: 'HTML SCSS Adaptive Layout',
-    description: 'Page layout',
-    demo: 'https://adriandmitruk.github.io/Birds-live/',
-    code: 'https://github.com/AdrianDmitruk/Birds-live',
-  },
 ]
 
 export const SmallProjectData = [
   {
-    stack: 'HTML CSS',
-    title: 'Food-Farming',
+    stack: 'HTML SCSS Adaptive Layout',
+    title: 'Birds-live',
     description: 'Page layout',
-    demo: 'adriandmitruk.github.io/Food-Farming/',
-    code: 'https://github.com/AdrianDmitruk/Food-Farming',
+    demo: 'https://adriandmitruk.github.io/Birds-live/',
+    code: 'https://github.com/AdrianDmitruk/Birds-live',
   },
   {
     stack: 'HTML CSS',
